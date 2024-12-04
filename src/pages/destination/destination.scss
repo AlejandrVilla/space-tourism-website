@@ -1,0 +1,121 @@
+@use "../../scss/base.scss" as base;
+
+.destination{
+    height: 100vh;
+    min-height: 888px;
+    display: grid;
+    grid-template-columns: auto;
+    align-content: center;
+    justify-items: center;
+    padding: 0 0 0 0;
+    gap: 8px;
+
+    // background-image: url("/assets/destination/background-destination-desktop.jpg");
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+}
+
+
+.destination-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    width: 1110px;
+    max-width: 1110px;
+    height: 792px;
+}
+
+.destination-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+
+    width: 365px;
+    height: 34px;
+}/* 02 */
+
+.o1{
+    opacity: 0.25;
+    font-weight: 700;
+    letter-spacing: 4.725px;
+}
+
+.destination-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    width: 1110px;
+    height: 734px;
+}
+
+.destination-img-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    width: 539px;
+    height: 734px;
+}
+
+.destination-img{
+    width: 480px;
+    height: 480px;
+}
+
+.destination-item-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+
+    width: 539px;
+    min-width: 445px;
+    height: 734px;
+}
+
+.destination-item-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+
+    width: 445px;
+    max-width: 445px;
+    height: 468px;
+}
+
+.destination-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 32px;
+
+    width: 445px;
+    height: 32px;
+}
+
+.destination-nav p{
+    color: base.$blue-300;
+    cursor: pointer;
+}
+
+.destination-nav p:hover{
+    color: base.$white;
+}

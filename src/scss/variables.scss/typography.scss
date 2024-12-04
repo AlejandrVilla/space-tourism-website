@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
+
+@mixin responsive-text($desktop-font, $tablet-font, $mobile-font, $style, $weight, $desktop-size, $desktop-line, $tablet-size, $tablet-line, $mobile-size, $mobile-line, $desktop-transform, $tablet-transform, $mobile-transform, $desktop-space, $tablet-space, $mobile-space){
+    
+    font-family: $desktop-font;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $desktop-size;
+    line-height: $desktop-line;
+    text-transform: $desktop-transform;
+    letter-spacing: $desktop-space;
+
+    @media (width <= 800px) {
+        font-family: $tablet-font;
+        font-size: $tablet-size;
+        line-height: $tablet-line;
+        text-transform: $tablet-transform;
+        letter-spacing: $tablet-space;
+    }
+
+    @media (width <= 400px) {
+        font-family: $mobile-font;
+        font-size: $mobile-size;
+        line-height: $mobile-line;
+        text-transform: $mobile-transform;
+        letter-spacing: $mobile-space;
+    }
+}
+
+.text-preset-1 {
+    @include responsive-text(('Bellefair', cursive), ('Bellefair', cursive), ('Bellefair', cursive), normal, 400, 144px, 165px, 144px, 165px, 80px, 92px, none, none, none, normal, normal, normal);
+}
+
+.text-preset-2 {
+    @include responsive-text(('Bellefair', cursive), ('Bellefair', cursive), ('Bellefair', cursive), 'normal', 400, 96px, 110px, 80px, 92px, 56px, 64px, none, none, none, normal, normal, normal);
+}
+
+.text-preset-3{
+    @include responsive-text(('Bellefair', cursive), ('Bellefair', cursive), ('Bellefair', cursive), normal, 400, 56px, 64px, 40px, 46px, 24px, 28px, uppercase, uppercase, uppercase, normal, normal, normal)
+}
+
+.text-preset-4{
+    @include responsive-text(('Bellefair', cursive), ('Bellefair', cursive), ('Bellefair', cursive), normal, 400, 32px, 37px, 24px, 28px, 18px, 21px, uppercase, uppercase, uppercase, normal, normal, normal)
+}
+
+.text-preset-5{
+    @include responsive-text(('Barlow Condensed', cursive), ('Barlow Condensed', cursive), ('Barlow Condensed', cursive), normal, 400, 28px, 34px, 20px, 24px, 20px, 24px, none, none, none, 4px, 4px, 0.15em)
+}
+
+.text-preset-6{
+    @include responsive-text(('Bellefair', cursive), ('Bellefair', cursive), ('Barlow Condensed', cursive), normal, 400, 28px, 32px, 28px, 32px, 16px, 19px, uppercase, none, none, normal, normal, 0.15em)
+}
+
+.text-preset-7{
+    @include responsive-text(('Barlow Condensed', cursive), ('Barlow Condensed', cursive), ('Barlow Condensed', cursive), normal, 400, 14px, 17px, 14px, 17px, 14px, 17px, uppercase, uppercase, uppercase, 2px, 2px, 2px)
+}
+
+.text-preset-8{
+    @include responsive-text(('Barlow Condensed', cursive), ('Barlow Condensed', cursive), ('Barlow Condensed', cursive), normal, 400, 16px, 19px, 16px, 19px, 14px, 17px, none, none, none, 2px, 2px, 0.15em)
+}
+
+.text-preset-8-bold{
+    @include responsive-text(('Barlow Condensed', cursive), ('Barlow Condensed', cursive), ('Barlow Condensed', cursive), normal, 700, 16px, 19px, 16px, 19px, 14px, 17px, none, none, none, 2.7px, 2.7px, 0.15em)
+}
+
+.text-preset-9{
+    @include responsive-text(('Barlow', cursive), ('Barlow', cursive), ('Barlow', cursive), normal, 400, 18px, 180%, 16px, 180%, 15px, 180%, none, none, none, normal, normal, normal)
+}

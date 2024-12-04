@@ -1,0 +1,17 @@
+@use "./variables.scss/color.scss" as color;
+@use "./variables.scss/typography.scss" as typography;
+@use "./variables.scss/layout.scss" as layout;
+
+@forward "./variables.scss/color.scss";
+@forward "./variables.scss/typography.scss";
+@forward "./variables.scss/layout.scss";
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: color.$blue-900;
+}
+

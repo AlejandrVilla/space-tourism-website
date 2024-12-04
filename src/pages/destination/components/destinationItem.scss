@@ -1,0 +1,50 @@
+@use "../../../scss/base.scss" as base;
+
+.dest-item-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+
+    width: 445px;
+    height: 254px;
+}
+
+.dest-item-header p{
+    color: base.$blue-300;
+}
+
+.dest-item-hr{
+    width: 445px;
+    height: 1px;
+
+    background: base.$white;
+    opacity: 0.25;
+}
+
+.dest-item-body{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    width: 445px;
+    height: 61px;
+}
+
+.dest-item-body-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 12px;
+
+    width: 210.5px;
+    height: 61px;
+}
+
+.dest-item-body-content h3{
+    color: base.$blue-300;
+}

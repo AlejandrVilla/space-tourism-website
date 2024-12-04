@@ -1,0 +1,202 @@
+@use "../../scss/base.scss" as base;
+
+.header{
+    width: 100%;
+    min-height: 136px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    // position: fixed;     
+    background: transparent;
+}
+
+.header-icon{
+    width: 736px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 96px;
+    gap: 64px;
+}
+
+.logo-icon{
+    width: 48px;
+    height: 48px;
+    margin: 0 0 0 64px;
+}
+
+.header-hr{
+    width: clamp(560px, 50%, 800px);
+    height: 1px;
+
+    background: base.$white;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+}
+
+.nav-links{
+    display: flex;
+    width: 736px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 64px 0px 64px;
+    gap: 48px;
+    height: 96px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(40px);
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 96px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.0);
+    transition: border-bottom 0.8s ease;
+}
+
+.link.active{
+    border-bottom: 3px solid rgba(255, 255, 255, 1.0);
+}
+
+.link:hover{
+    /* Staets=Navigation-Hover */
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+@media(width <= 800px){
+    .header{
+        align-items: center;
+        padding: 0px;
+        isolation: isolate;
+        height: 96px;
+    }
+
+    .header-icon{
+        width: 160px;
+        max-width: 160px;
+        height: 48px;
+    }
+
+    .logo-icon{
+        margin: 0 0 0 40px;
+    }
+
+    .nav-links{
+        padding: 0px 40px;
+        width: 640px;
+        min-width: 488px;
+    }
+}
+
+@media(width < 400px){
+    .hamburger-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0px 24px 0px 0px;
+        gap: 8px;
+    
+        width: 187.5px;
+        height: 40px;
+    }
+    
+    .nav-links-div{
+        transform: translateX(100%);
+        transition: transform 0.8s ease;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px 0px 0px 32px;
+        gap: 48px;
+        
+        position: fixed;
+        width: 254px;
+        height: 100vh;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        
+        background: rgba(11, 13, 23, 0.15);
+        backdrop-filter: blur(40px);
+    }
+    
+    .nav-links-div.active{
+        transform: translateX(0);
+
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .close-div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 32px 0px;
+        isolation: isolate;
+    
+        width: 222px;
+        height: 85px;
+    }
+    
+    .close-div div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0px 24px 0px 0px;
+        gap: 8px;
+    
+        width: 222px;
+        height: 21px;
+    }
+    
+    .icon-close{
+        width: 24px;
+        height: 24px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 32px;
+        
+        width: 222px;
+        min-width: 222px;
+        height: 172px;
+        background: none;
+    }
+
+    .link{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 8px;
+
+        width: 222px;
+        height: 19px;
+
+        border-right: 3px solid rgba(255, 255, 255, 0.0);
+        transition: border-right 0.8s ease;
+    }
+    .link.active{
+        border-right: 3px solid rgba(255, 255, 255, 1.0);
+        border-bottom: 3px solid rgba(255, 255, 255, 0.0);
+    }
+    .link:hover{
+        /* Staets=Navigation-Hover */
+        border-right: 3px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 3px solid rgba(255, 255, 255, 0.0);
+    }
+}
