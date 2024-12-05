@@ -10,7 +10,7 @@
     text-transform: $desktop-transform;
     letter-spacing: $desktop-space;
 
-    @media (width <= 800px) {
+    @media (width <= 1100px) {
         font-family: $tablet-font;
         font-size: $tablet-size;
         line-height: $tablet-line;
@@ -18,7 +18,7 @@
         letter-spacing: $tablet-space;
     }
 
-    @media (width <= 400px) {
+    @media (width <= 700px) {
         font-family: $mobile-font;
         font-size: $mobile-size;
         line-height: $mobile-line;
@@ -32,7 +32,7 @@
 }
 
 .text-preset-2 {
-    @include responsive-text(('Bellefair', cursive), ('Bellefair', cursive), ('Bellefair', cursive), 'normal', 400, 96px, 110px, 80px, 92px, 56px, 64px, none, none, none, normal, normal, normal);
+    @include responsive-text(('Bellefair', cursive), ('Bellefair', cursive), ('Bellefair', cursive), normal, 400, 96px, 110px, 80px, 92px, 56px, 64px, none, none, none, normal, normal, normal);
 }
 
 .text-preset-3{

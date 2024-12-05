@@ -11,11 +11,11 @@ const DestinationItem = (props) => {
             <div className="dest-item-body">
                 <div className="dest-item-body-content">
                     <h3 className="text-preset-7">avg. distance</h3>
-                    <p className="text-preset-6">{props.item.distance}</p>
+                    <p className="text-preset-6">{props.item.distance.toUpperCase()}</p>
                 </div>
                 <div className="dest-item-body-content">
-                    <h3 className="text-preset-7">est. trave time</h3>
-                    <p className="text-preset-6">{props.item.travel}</p>
+                    <h3 className="text-preset-7">est. travel time</h3>
+                    <p className="text-preset-6">{props.item.travel.toUpperCase()}</p>
                 </div>
             </div>
         </>

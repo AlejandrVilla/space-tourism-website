@@ -4,7 +4,7 @@ import closeIcon from "/shared/icon-close.svg";
 import "./header.scss";
 
 const Header = ({setCurrentBack, menuIsActive, setMenuIsActive, linkActive, setLinkActive}) => {
-    const screenWidth = window.innerWidth < 400;
+    const screenWidth = window.innerWidth < 700;
 
     const handleMenu = (e) => {
         e.stopPropagation();

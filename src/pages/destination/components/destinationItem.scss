@@ -48,3 +48,56 @@
 .dest-item-body-content h3{
     color: base.$blue-300;
 }
+
+@media (width <= 1100px){
+    .dest-item-header{
+        width: 514px;
+        height: 195px;
+    }
+    .dest-item-header h1{
+        width: 100%;
+
+        text-align: center;
+    }
+    .dest-item-header p{
+        width: 100%;
+
+        text-align: center;
+    }
+    .dest-item-hr{
+        width: 514px;
+        height: 1px;
+    }
+    .dest-item-body{
+        width: 514px;
+        height: 61px;
+    }
+    .dest-item-body-content{
+        width: 245px;
+        height: 61px;
+        align-items: center;
+    }
+}
+
+@media (width < 700px){
+    .dest-item-header{
+        width: 327px;
+        height: 215px;
+    }
+    .dest-item-hr{
+        width: 327px;
+        height: 1px;
+    }
+    .dest-item-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 327px;
+        height: 146px;
+    }
+    .dest-item-body-content{
+        width: 327px;
+        height: 61px;
+    }
+}

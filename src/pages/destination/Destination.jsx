@@ -8,10 +8,11 @@ const destinations = data.destinations;
 
 const Destination = () => {
     const [currentItem, setCurrentItem] = useState("moon");
+    const [activeDest, setActiveDest] = useState("moon");
 
     const handleClick = (item) => {
         setCurrentItem(item);
-        console.log(currentItem);
+        setActiveDest(item);
     }
 
     return (
@@ -28,10 +29,10 @@ const Destination = () => {
                     <div className="destination-item-content">
                         <div className="destination-item-wrap">
                             <div className="destination-nav">
-                                <p className="text-preset-8" onClick={() => handleClick("moon")}>MOON</p>
-                                <p className="text-preset-8" onClick={() => handleClick("europa")}>EUROPA</p>
-                                <p className="text-preset-8" onClick={() => handleClick("mars")}>MARS</p>
-                                <p className="text-preset-8" onClick={() => handleClick("titan")}>TITAN</p>
+                                <p className={`text-preset-8 dest-link${activeDest === "moon"? " active": ""}`} onClick={() => handleClick("moon")}>MOON</p>
+                                <p className={`text-preset-8 dest-link${activeDest === "europa"? " active": ""}`} onClick={() => handleClick("europa")}>EUROPA</p>
+                                <p className={`text-preset-8 dest-link${activeDest === "mars"? " active": ""}`} onClick={() => handleClick("mars")}>MARS</p>
+                                <p className={`text-preset-8 dest-link${activeDest === "titan"? " active": ""}`} onClick={() => handleClick("titan")}>TITAN</p>
                             </div>
                             {destinations.filter((item) => (currentItem === item.name.toLowerCase())).map((item, index) => (<DestinationItem key={index} item={item} />))}
                         </div>
