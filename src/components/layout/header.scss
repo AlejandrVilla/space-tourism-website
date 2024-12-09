@@ -45,8 +45,6 @@
     padding: 0px 64px 0px 64px;
     gap: 48px;
     height: 96px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(40px);
 }
 
 .link{
@@ -74,7 +72,7 @@
         align-items: center;
         padding: 0px;
         isolation: isolate;
-        height: 96px;
+        min-height: 96px;
     }
 
     .header-icon{
@@ -173,7 +171,6 @@
         width: 222px;
         min-width: 222px;
         height: 172px;
-        background: none;
     }
 
     .link{

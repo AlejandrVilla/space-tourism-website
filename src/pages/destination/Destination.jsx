@@ -1,6 +1,5 @@
 import data from "../../utils/data.json";
 import DestinationItem from "./components/DestinationItem";
-import BackImage from "../../components/common/BackImage";
 import { useState } from "react";
 import "./destination.scss";
 
