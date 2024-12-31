@@ -1,0 +1,248 @@
+@use "../../scss/base.scss" as base;
+
+.tech{
+    width: 100%;
+    height: 100vh;
+    min-height: 888px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 48px 0px;
+    gap: 8px;
+
+    @media (width <= 1100px){
+        align-items: center;
+        padding: 40px;
+        min-height: 928px;
+    }
+    @media (width < 700px){
+        align-items: center;
+        padding: 24px 24px 48px;
+        min-height: 792px;
+    }
+}
+
+.tech-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    width: 1275px;
+    max-width: 1275px;
+    height: 792px;
+
+    @media (width <= 1100px){
+        width: 688px;
+        height: 848px;
+    }
+    @media (width < 700px){
+        width: 327px;
+        height: 720px;
+    }
+}
+
+.tech-header{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    width: 300px;
+    height: 34px;
+
+    @media (width <= 1100px){
+        width: 688px;
+        height: 24px;
+    }
+    @media (width < 700px){
+        justify-content: center;
+        width: 327px;
+        height: 19px;
+    }
+}
+
+.o3{
+    letter-spacing: 4.725px;
+    font-weight: 700;
+    opacity: 0.25;
+}
+
+.tech-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    width: 1275px;
+    height: 734px;
+
+    @media (width <= 1100px){
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-start;
+
+        width: 688px;
+        height: 800px;
+    }
+    @media (width < 700px){
+        flex-direction: column-reverse;
+        align-items: center;
+
+        width: 327px;
+        height: 677px;   
+    }
+}
+
+.tech-item-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 64px;
+
+    width: 635px;
+    height: 304px;
+
+    @media (width <= 1100px){
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        width: 688px;
+        height: 347px;
+    }
+    @media (width < 700px){
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        width: 327px;
+        height: 323px;
+    }
+}
+
+.tech-list{
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+
+    width: 80px;
+    height: 304px;
+
+    @media (width <= 1100px){
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
+
+        width: 512px;
+        max-width: 512px;
+        height: 56px;
+    }
+    @media (width < 700px){
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        gap: 16px;
+
+        width: 327px;
+        max-width: 514px;
+        height: 40px;
+    }
+}
+
+.tech-list-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    width: 80px;
+    height: 80px;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+
+    background-color: rgb(255, 255, 255, 0);
+    transition: background-color 1s ease, border 1s ease;
+
+    cursor: pointer;
+
+    @media (width <= 1100px){
+        width: 56px;
+        height: 56px;
+    }
+    @media (width < 700px){
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.tech-list-button p{
+    color: base.$white;
+    transition: color 1s ease;
+}
+
+.tech-list-button:hover{
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.tech-list-button.active{
+    background-color: rgb(255, 255, 255, 1);
+}
+
+.tech-list-button.active p{
+    color: base.$blue-900;
+}
+
+.tech-img-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    width: auto;
+    height: 734px;
+
+    @media (width <= 1100px){
+        margin: 64px 0px 0px;
+        overflow: hidden;
+        width: 688px;
+        height: 421px;
+    }
+    @media (width < 700px){
+        margin: 64px 0px 0px;
+        overflow: visible;
+        width: 327px;
+        height: 322px;
+    }
+}
+
+.tech-img{
+    width: 608px;
+    height: 600px;
+    // object-fit: contain;
+
+    @media (width <= 1100px){
+        width: 768px;
+        height: auto;
+    }
+    @media (width < 700px){
+        width: 100vw;
+        height: 258px;
+    }
+}

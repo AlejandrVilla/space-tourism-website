@@ -1,0 +1,73 @@
+@use "../../../scss/base.scss" as base;
+
+.tech-item-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    width: 491px;
+    max-width: 640px;
+    height: 301px;
+
+    @media (width <= 1100px){
+        align-items: center;
+        gap: 16px;
+
+        width: 512px;
+        max-width: 512px;
+        height: 251px;
+    }
+    @media (width < 700px){
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+
+        width: 327px;
+        max-width: 514px;
+        height: 243px;
+    }
+}
+
+
+.tech-item-header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    
+    width: 491px;
+    height: 117px;
+
+    @media (width <= 1100px){
+        align-items: center;
+
+        width: 512px;
+        height: 90px;
+    }
+    @media (width < 700px){
+        align-items: center;
+
+        width: 327px;
+        height: 65px;
+    }
+}
+
+.tech-item-header h2{
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.tech-item-wrap p{
+    color: base.$blue-300;
+
+    @media (width <= 1100px){
+        text-align: center;
+    }
+    @media (width < 700px){
+        text-align: center;
+    }
+}
