@@ -52,6 +52,7 @@
 }
 
 .destination-img-div{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -63,6 +64,7 @@
 }
 
 .destination-img{
+    position: absolute;
     width: 480px;
     height: 480px;
 }
@@ -81,12 +83,8 @@
 }
 
 .destination-item-wrap{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     padding: 0px;
-    gap: 40px;
 
     width: 445px;
     max-width: 445px;
@@ -94,6 +92,8 @@
 }
 
 .destination-nav{
+    position: absolute;
+    top: 0;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -102,6 +102,17 @@
 
     width: 445px;
     height: 32px;
+}
+
+.destination-item-wrap-content{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
 }
 
 .dest-link{
@@ -165,11 +176,12 @@
         height: 384px;
     }
     .destination-item-wrap{
-        gap: 24px;
-
         width: 514px;
         max-width: 514px;
         height: 361px;
+    }
+    .destination-item-wrap-content{
+        gap: 24px;
     }
     .destination-nav{
         justify-content: center;
@@ -219,11 +231,12 @@
         min-width: 327px;
     }
     .destination-item-wrap{
-        gap: 24px;
-
         width: 327px;
         max-width: 514px;
         height: 466px;
+    }
+    .destination-item-wrap-content{
+        gap: 24px;
     }
     .destination-nav{
         justify-content: center;

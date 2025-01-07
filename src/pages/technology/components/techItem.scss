@@ -1,6 +1,8 @@
 @use "../../../scss/base.scss" as base;
 
 .tech-item-wrap{
+    position: absolute;
+    right: 0;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -13,6 +15,8 @@
     height: 301px;
 
     @media (width <= 1100px){
+        right: auto;
+        bottom: 0;
         align-items: center;
         gap: 16px;
 
@@ -21,6 +25,8 @@
         height: 251px;
     }
     @media (width < 700px){
+        right: auto;
+        bottom: 0;
         justify-content: center;
         align-items: center;
         gap: 16px;

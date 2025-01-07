@@ -3,7 +3,7 @@ import hamburguerIcon from "/shared/icon-hamburger.svg";
 import closeIcon from "/shared/icon-close.svg";
 import "./header.scss";
 
-const Header = ({setCurrentBack, menuIsActive, setMenuIsActive, linkActive, setLinkActive}) => {
+const Header = ({location, menuIsActive, setMenuIsActive}) => {
     const screenWidth = window.innerWidth < 700;
 
     const handleMenu = (e) => {
@@ -11,28 +11,23 @@ const Header = ({setCurrentBack, menuIsActive, setMenuIsActive, linkActive, setL
         setMenuIsActive(!menuIsActive);
     }
 
-    const handleClickLink = (link) => {
-        setCurrentBack(link)
-        setLinkActive(link);
-    }
-
     let navClassName = "nav-links-div";
     navClassName += (menuIsActive)? " active" : "";
 
     const navBar = <nav className="nav-links">
-                        <Link onClick={() => handleClickLink("home")} className={`link ${linkActive === "home" ? "active":""}`} to="/">
+                        <Link className={`link ${location.pathname === "/" ? "active":""}`} to="/">
                             <p className="text-preset-8-bold">00</p>
                             <p className="text-preset-8">HOME</p>
                         </Link>
-                        <Link onClick={() => handleClickLink("destination")} className={`link ${linkActive === "destination" ? "active":""}`} to="/destination">
+                        <Link className={`link ${location.pathname === "/destination" ? "active":""}`} to="/destination">
                             <p className="text-preset-8-bold">01</p>
                             <p className="text-preset-8">DESTINATION</p>
                         </Link>
-                        <Link onClick={() => handleClickLink("crew")} className={`link ${linkActive === "crew" ? "active":""}`} to="/crew">
+                        <Link className={`link ${location.pathname === "/crew" ? "active":""}`} to="/crew">
                             <p className="text-preset-8-bold">02</p>
                             <p className="text-preset-8">CREW</p>
                         </Link>
-                        <Link onClick={() => handleClickLink("technology")} className={`link ${linkActive === "technology" ? "active":""}`} to="/technology">
+                        <Link className={`link ${location.pathname === "/technology" ? "active":""}`} to="/technology">
                             <p className="text-preset-8-bold">03</p>
                             <p className="text-preset-8">TECHNOLOGY</p>
                         </Link>

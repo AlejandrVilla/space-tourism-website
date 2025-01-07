@@ -1,13 +1,14 @@
 @use "../../scss/base.scss" as base;
 
 .header{
+    position: relative;     
+    z-index: 1;
     width: 100%;
     min-height: 136px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
-    // position: fixed;     
     background: transparent;
 }
 

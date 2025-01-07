@@ -7,7 +7,7 @@ const DestinationItem = (props) => {
                 <h1 className="text-preset-2">{props.item.name.toUpperCase()}</h1>
                 <p className="text-preset-9">{props.item.description}</p>
             </div>
-            <hr className="dest-item-hr"/>
+            <hr className="dest-item-hr" />
             <div className="dest-item-body">
                 <div className="dest-item-body-content">
                     <h3 className="text-preset-7">avg. distance</h3>

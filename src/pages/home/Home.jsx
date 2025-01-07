@@ -1,11 +1,19 @@
+import { motion } from "framer-motion";
+import { childVariants } from "../../utils/utils.jsx";
 import Card from "./components/Card.jsx";
 import "./home.scss";
 
 const Home = () => {
     return (
-        <div className="home">
+        <motion.div 
+            className="home"
+            variants={childVariants}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+        >
             <Card/>
-        </div>
+        </motion.div>
     );
 }
 
