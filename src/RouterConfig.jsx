@@ -21,13 +21,13 @@ const RouterConfig = () => {
     let windowType = getWindowType(window.innerWidth);
 
     const backgroundImages = {
-        "/": `/assets/home/background-home-${windowType}.jpg`,
-        "/destination": `/assets/destination/background-destination-${windowType}.jpg`,
-        "/crew": `/assets/crew/background-crew-${windowType}.jpg`,
-        "/technology": `/assets/technology/background-technology-${windowType}.jpg`,
+        "/": `./assets/home/background-home-${windowType}.jpg`,
+        "/destination": `./assets/destination/background-destination-${windowType}.jpg`,
+        "/crew": `./assets/crew/background-crew-${windowType}.jpg`,
+        "/technology": `./assets/technology/background-technology-${windowType}.jpg`,
     };
 
-    const backgroundImage = backgroundImages[location.pathname] || `/assets/home/background-home-${windowType}.jpg`;
+    const backgroundImage = backgroundImages[location.pathname] || `./assets/home/background-home-${windowType}.jpg`;
     return (
         <>
             <AnimatePresence mode='sync' initial={false}>
