@@ -4,7 +4,7 @@ import { childVariants } from "../../../utils/utils";
 
 const CrewItem = (props) => {
     return (
-        <AnimatePresence mode="sync">
+        <AnimatePresence mode="sync" initial={false}>
             <motion.div 
                 className="crew-item-wrap"
                 key={props.item.name}
