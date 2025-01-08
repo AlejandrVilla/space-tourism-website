@@ -16,12 +16,14 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![screenshot1](./images/screenshot1.png)
+![screenshot2](./images/screenshot2.png)
+![screenshot3](./images/screenshot3.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://your-solution-url.com)
+- Live Site URL: [Live site](https://alejandrvilla.github.io/space-tourism-website/)
 
 ## My process
 
@@ -36,9 +38,12 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 
 ### Useful resources
 
-- [Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Useful to learn about Flexbox.
-- [Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) - Useful to learn about CSS Grid
+- [Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [HTML DOM](https://www.w3schools.com/jsref/prop_html_innerhtml.asp)
+- [Animate Routes using Framer Motion](https://www.freecodecamp.org/news/improve-user-experience-in-react-by-animating-routes-using-framer-motion/)
+- [Framer motion docs](https://motion.dev/docs)
+- [Deploying React Vite with Routing on GitHub Pages](https://medium.com/@karinamisnik94/deploying-react-vite-with-routing-on-github-pages-68385676b788)
 
 ## Author
 
