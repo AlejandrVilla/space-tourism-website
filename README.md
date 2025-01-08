@@ -22,7 +22,7 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/space-tourism-multipage-website-4cRqRXwmyq)
 - Live Site URL: [Live site](https://alejandrvilla.github.io/space-tourism-website/)
 
 ## My process
