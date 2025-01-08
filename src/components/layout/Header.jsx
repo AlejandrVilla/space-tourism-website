@@ -38,7 +38,7 @@ const Header = ({location, menuIsActive, setMenuIsActive}) => {
             <div className="header-icon">
                 <img 
                     className="logo-icon" 
-                    src="/shared/logo.svg"/>
+                    src="./shared/logo.svg"/>
                 <hr className="header-hr"/>
             </div>
             {screenWidth? (
